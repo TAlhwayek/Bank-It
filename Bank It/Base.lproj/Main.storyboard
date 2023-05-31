@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iF8-7M-oHt">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -12,16 +12,23 @@
         <!--View Controller-->
         <scene sceneID="TCX-a4-6jC">
             <objects>
-                <viewController storyboardIdentifier="helpMenu" id="jcV-VH-uv3" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="helpMenuViewController" id="jcV-VH-uv3" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fOq-9A-pTW">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1j-Mf-1Ke">
-                                <rect key="frame" x="50" y="153" width="292" height="220"/>
+                                <rect key="frame" x="50" y="226" width="292" height="220"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">You are given a starting number. If you feel that the next number will be higher, press higher. If you feel that the next number will be lower, press lower. That's it!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How to play:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4f-ot-rdr">
+                                <rect key="frame" x="50" y="155" width="292" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -33,12 +40,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EnR-di-jiM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1078.6259541984732" y="-691.54929577464793"/>
+            <point key="canvasLocation" x="1148.854961832061" y="-692.25352112676057"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bank_It" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="startPage" id="BYZ-38-t0r" customClass="ViewController" customModule="Bank_It" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -69,7 +76,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="questionmark.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vuZ-Hx-oIU">
-                                <rect key="frame" x="327" y="59" width="50" height="50"/>
+                                <rect key="frame" x="171" y="362" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
@@ -77,14 +84,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <navigationItem key="navigationItem" id="E87-py-wTR"/>
                     <connections>
                         <outlet property="helpButton" destination="vuZ-Hx-oIU" id="jFF-X2-1CE"/>
-                        <segue destination="jcV-VH-uv3" kind="show" identifier="helpMenu" id="dIU-9g-3BM"/>
+                        <segue destination="jcV-VH-uv3" kind="show" identifier="helpMenuSegue" id="dIU-9g-3BM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="223.66412213740458" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="1150.3816793893129" y="3.5211267605633805"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="HEh-mi-nc0">
@@ -150,7 +158,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ECR-NW-n1D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1078.6259541984732" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="2005.3435114503816" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6XS-zd-0GU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iF8-7M-oHt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7KW-Oh-SKQ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Of2-Om-m0v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qxo-dN-A1Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="223.66412213740458" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>

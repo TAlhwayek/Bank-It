@@ -12,6 +12,7 @@ class BankClass {
     var displayedNumber: Int = 0
     var nextNumber: Int = Int(arc4random_uniform(1001))
     var score: Int = 0
+    var lives: Int = 3
     
     
     // Get new random number 1 - 1000
@@ -33,6 +34,10 @@ class BankClass {
         return score
     }
     
+    func getLives() -> Int {
+        return lives
+    }
+    
     // Checks for correct answer
     // Input: A bool that indicates which button was pressed
     // Output: Returns true if correct or false if incorrect
@@ -45,6 +50,7 @@ class BankClass {
             userGotItCorrect = true
         } else {
             userGotItCorrect = false
+            lives -= 1
         }
 
         // Update score is answer is correct

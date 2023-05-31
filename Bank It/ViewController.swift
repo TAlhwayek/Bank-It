@@ -17,25 +17,27 @@ class ViewController: UIViewController {
         
         // Help button section
         helpButton.isUserInteractionEnabled = true
-        
         // Create a tap gesture recognizer
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
-        
-        // Add the tap gesture recognizer to the image view
         helpButton.addGestureRecognizer(tapGesture)
+        
+        // Change back button to "Exit"
+        navigationItem.backBarButtonItem = UIBarButtonItem(
+            title: "Exit", style: .plain, target: nil, action: nil)
     }
     
     // Start button pressed
     @IBAction func startButton(_ sender: Any) {
         // Open main game
         let gameVC = storyboard?.instantiateViewController(withIdentifier: "gameViewController") as! gameViewController
-        gameVC.modalPresentationStyle = .fullScreen
-        gameVC.modalTransitionStyle = .flipHorizontal
-            present(gameVC, animated: true, completion: nil)
+        // Navigate to game
+        navigationController?.pushViewController(gameVC, animated: true)
     }
-    
+   
     @objc func imageTapped() {
-        performSegue(withIdentifier: "helpMenu", sender: self)
+        let helpMenuVC = storyboard?.instantiateViewController(withIdentifier: "helpMenuViewController")
+        helpMenuVC?.modalPresentationStyle = .popover
+        present(helpMenuVC!, animated: true, completion: nil)
     }
 }
 
