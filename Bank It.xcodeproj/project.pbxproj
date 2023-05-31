@@ -13,9 +13,6 @@
 		9BE41AE82A15C839005E8A6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BE41AE62A15C839005E8A6A /* Main.storyboard */; };
 		9BE41AEA2A15C83C005E8A6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BE41AE92A15C83C005E8A6A /* Assets.xcassets */; };
 		9BE41AED2A15C83C005E8A6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BE41AEB2A15C83C005E8A6A /* LaunchScreen.storyboard */; };
-		9BE41AF82A15C83D005E8A6A /* Bank_ItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE41AF72A15C83D005E8A6A /* Bank_ItTests.swift */; };
-		9BE41B022A15C83D005E8A6A /* Bank_ItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE41B012A15C83D005E8A6A /* Bank_ItUITests.swift */; };
-		9BE41B042A15C83D005E8A6A /* Bank_ItUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE41B032A15C83D005E8A6A /* Bank_ItUITestsLaunchTests.swift */; };
 		9BF8CC752A26BA0500E01C33 /* bankClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF8CC742A26BA0500E01C33 /* bankClass.swift */; };
 		9BF8CC772A26BC4E00E01C33 /* gameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF8CC762A26BC4E00E01C33 /* gameViewController.swift */; };
 /* End PBXBuildFile section */
@@ -47,10 +44,7 @@
 		9BE41AEC2A15C83C005E8A6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BE41AEE2A15C83C005E8A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BE41AF32A15C83D005E8A6A /* Bank ItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bank ItTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BE41AF72A15C83D005E8A6A /* Bank_ItTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank_ItTests.swift; sourceTree = "<group>"; };
 		9BE41AFD2A15C83D005E8A6A /* Bank ItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bank ItUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BE41B012A15C83D005E8A6A /* Bank_ItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank_ItUITests.swift; sourceTree = "<group>"; };
-		9BE41B032A15C83D005E8A6A /* Bank_ItUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank_ItUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9BF8CC742A26BA0500E01C33 /* bankClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bankClass.swift; sourceTree = "<group>"; };
 		9BF8CC762A26BC4E00E01C33 /* gameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,8 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				9BE41ADF2A15C839005E8A6A /* Bank It */,
-				9BE41AF62A15C83D005E8A6A /* Bank ItTests */,
-				9BE41B002A15C83D005E8A6A /* Bank ItUITests */,
 				9BE41ADE2A15C839005E8A6A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,23 +106,6 @@
 				9BF8CC762A26BC4E00E01C33 /* gameViewController.swift */,
 			);
 			path = "Bank It";
-			sourceTree = "<group>";
-		};
-		9BE41AF62A15C83D005E8A6A /* Bank ItTests */ = {
-			isa = PBXGroup;
-			children = (
-				9BE41AF72A15C83D005E8A6A /* Bank_ItTests.swift */,
-			);
-			path = "Bank ItTests";
-			sourceTree = "<group>";
-		};
-		9BE41B002A15C83D005E8A6A /* Bank ItUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9BE41B012A15C83D005E8A6A /* Bank_ItUITests.swift */,
-				9BE41B032A15C83D005E8A6A /* Bank_ItUITestsLaunchTests.swift */,
-			);
-			path = "Bank ItUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +251,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BE41AF82A15C83D005E8A6A /* Bank_ItTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,8 +258,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BE41B022A15C83D005E8A6A /* Bank_ItUITests.swift in Sources */,
-				9BE41B042A15C83D005E8A6A /* Bank_ItUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

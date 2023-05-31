@@ -34,6 +34,7 @@ class BankClass {
         return score
     }
     
+    // Get lives
     func getLives() -> Int {
         return lives
     }
@@ -52,12 +53,7 @@ class BankClass {
             userGotItCorrect = false
             lives -= 1
         }
-
-        // Update score is answer is correct
-//        if (userGotItCorrect) {
-//            score += 1
-//        }
-
+        
         return userGotItCorrect
     }
 }
