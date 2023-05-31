@@ -16,6 +16,8 @@
 		9BE41AF82A15C83D005E8A6A /* Bank_ItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE41AF72A15C83D005E8A6A /* Bank_ItTests.swift */; };
 		9BE41B022A15C83D005E8A6A /* Bank_ItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE41B012A15C83D005E8A6A /* Bank_ItUITests.swift */; };
 		9BE41B042A15C83D005E8A6A /* Bank_ItUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE41B032A15C83D005E8A6A /* Bank_ItUITestsLaunchTests.swift */; };
+		9BF8CC752A26BA0500E01C33 /* bankClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF8CC742A26BA0500E01C33 /* bankClass.swift */; };
+		9BF8CC772A26BC4E00E01C33 /* gameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF8CC762A26BC4E00E01C33 /* gameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		9BE41AFD2A15C83D005E8A6A /* Bank ItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bank ItUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE41B012A15C83D005E8A6A /* Bank_ItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank_ItUITests.swift; sourceTree = "<group>"; };
 		9BE41B032A15C83D005E8A6A /* Bank_ItUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank_ItUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9BF8CC742A26BA0500E01C33 /* bankClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bankClass.swift; sourceTree = "<group>"; };
+		9BF8CC762A26BC4E00E01C33 /* gameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				9BE41AE92A15C83C005E8A6A /* Assets.xcassets */,
 				9BE41AEB2A15C83C005E8A6A /* LaunchScreen.storyboard */,
 				9BE41AEE2A15C83C005E8A6A /* Info.plist */,
+				9BF8CC742A26BA0500E01C33 /* bankClass.swift */,
+				9BF8CC762A26BC4E00E01C33 /* gameViewController.swift */,
 			);
 			path = "Bank It";
 			sourceTree = "<group>";
@@ -258,8 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BF8CC752A26BA0500E01C33 /* bankClass.swift in Sources */,
 				9BE41AE52A15C839005E8A6A /* ViewController.swift in Sources */,
 				9BE41AE12A15C839005E8A6A /* AppDelegate.swift in Sources */,
+				9BF8CC772A26BC4E00E01C33 /* gameViewController.swift in Sources */,
 				9BE41AE32A15C839005E8A6A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,11 +448,14 @@
 				DEVELOPMENT_TEAM = X6V95URS4Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Bank It/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bank It";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,11 +479,14 @@
 				DEVELOPMENT_TEAM = X6V95URS4Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Bank It/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bank It";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
