@@ -28,10 +28,10 @@ class ViewController: UIViewController {
     // Start button pressed
     @IBAction func startButton(_ sender: Any) {
         // Open main game
-        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            let destinationVC = segue.destination as UIViewController
-            destinationVC.title = "gameView"
-        }
+        let gameVC = storyboard?.instantiateViewController(withIdentifier: "gameViewController") as! gameViewController
+        gameVC.modalPresentationStyle = .fullScreen
+        gameVC.modalTransitionStyle = .flipHorizontal
+            present(gameVC, animated: true, completion: nil)
     }
     
     @objc func imageTapped() {

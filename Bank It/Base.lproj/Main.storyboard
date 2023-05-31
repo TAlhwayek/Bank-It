@@ -52,7 +52,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="si9-uu-xTy"/>
-                                    <segue destination="NKP-KX-wpb" kind="show" id="G1T-Ug-k1U"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bank It" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKc-Np-OwC">
@@ -90,9 +89,9 @@
         <!--Game View Controller-->
         <scene sceneID="HEh-mi-nc0">
             <objects>
-                <viewController storyboardIdentifier="gameView" id="NKP-KX-wpb" customClass="gameViewController" customModule="Bank_It" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" restorationIdentifier="gameView" id="YU4-6d-iIJ" userLabel="gameView">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                <viewController storyboardIdentifier="gameViewController" id="NKP-KX-wpb" customClass="gameViewController" customModule="Bank_It" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="gameViewController" id="YU4-6d-iIJ" userLabel="gameViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjz-9m-DVS">
