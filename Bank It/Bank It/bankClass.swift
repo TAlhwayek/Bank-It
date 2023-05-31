@@ -18,11 +18,11 @@ class BankClass {
     func getNewNumber() -> Int {
         // Update displayed number
         displayedNumber = nextNumber
-        nextNumber = Int(arc4random_uniform(1001))
+        nextNumber = Int(arc4random_uniform(1000))
         
         // Disallow duplicates (just in case)
         if (nextNumber == displayedNumber) {
-            nextNumber = Int(arc4random_uniform(1001))
+            nextNumber = Int(arc4random_uniform(1000))
         }
         // This is used to update the number label
         return displayedNumber
