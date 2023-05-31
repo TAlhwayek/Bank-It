@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // Help button section
+        // Make image tappable
         helpButton.isUserInteractionEnabled = true
         // Create a tap gesture recognizer
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
@@ -34,6 +35,7 @@ class ViewController: UIViewController {
         navigationController?.pushViewController(gameVC, animated: true)
     }
    
+    // Popover help section
     @objc func imageTapped() {
         let helpMenuVC = storyboard?.instantiateViewController(withIdentifier: "helpMenuViewController")
         helpMenuVC?.modalPresentationStyle = .popover
