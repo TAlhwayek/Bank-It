@@ -14,7 +14,6 @@ class BankClass {
     var score: Int = 0
     var lives: Int = 3
     
-    
     // Get new random number 1 - 1000
     func getNewNumber() -> Int {
         // Update displayed number

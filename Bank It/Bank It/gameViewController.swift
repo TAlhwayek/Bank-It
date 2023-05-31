@@ -15,9 +15,8 @@ class gameViewController: UIViewController {
     
     // Labels
     @IBOutlet weak var scoreLabel: UILabel!
-    // Test
     @IBOutlet weak var numberLabel: UILabel!
-    
+    @IBOutlet weak var livesLabel: UILabel!
     
     override func viewDidLoad() {
         // Create new object
@@ -34,6 +33,7 @@ class gameViewController: UIViewController {
     func updateUI() {
         numberLabel.text = String(newGame?.getNewNumber() ?? 0)
         scoreLabel.text = "Score: " + String(newGame?.getScore() ?? 0)
+        livesLabel.text = "Lives: " + String(newGame?.getLives() ?? 3)
         // If user ran out of lives
         if(newGame?.getLives() == 0) {
             showAlertButton()
