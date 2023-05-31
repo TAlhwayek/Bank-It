@@ -6,3 +6,4 @@
  Fixes needed:
  - General UI updates
  - Add high score implementation
+ - Add layout constraints
