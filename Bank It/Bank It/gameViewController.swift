@@ -39,20 +39,21 @@ class gameViewController: UIViewController {
         numberLabel.text = String(newGame?.getNewNumber() ?? 0)
         scoreLabel.text = "Score: " + String(newGame?.getScore() ?? 0)
         livesLabel.text = "Lives: " + String(newGame?.getLives() ?? 3)
-        
+
         // Update high score
         let updatedHighScore = newGame?.updateHighScore() ?? 0
         delegate?.updateHighScore(score: updatedHighScore)
-        
+
         // Save high score
         UserDefaults.standard.set(updatedHighScore, forKey: "HighScore")
         UserDefaults.standard.synchronize()
-        
+
         // If user ran out of lives, display an alert
         if(newGame?.getLives() == 0) {
             showAlertButton()
         }
     }
+
     
     // If "higher" is pressed
     @IBAction func higherButtonPressed(_ sender: UIButton) {

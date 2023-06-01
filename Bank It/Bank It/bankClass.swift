@@ -13,7 +13,16 @@ class BankClass {
     var nextNumber: Int = Int(arc4random_uniform(1001))
     var score: Int = 0
     var lives: Int = 3
-    var highScore: Int = 0
+    
+    // Get high score
+    var highScore: Int {
+        get {
+            return UserDefaults.standard.integer(forKey: "HighScoreKey")
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "HighScoreKey")
+        }
+    }
     
     // Get new random number 1 - 1000
     func getNewNumber() -> Int {
