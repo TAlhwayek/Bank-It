@@ -13,6 +13,7 @@ class BankClass {
     var nextNumber: Int = Int(arc4random_uniform(1001))
     var score: Int = 0
     var lives: Int = 3
+    var highScore: Int = 0
     
     // Get new random number 1 - 1000
     func getNewNumber() -> Int {
@@ -54,5 +55,13 @@ class BankClass {
         }
         
         return userGotItCorrect
+    }
+    
+    // Update high score
+    func updateHighScore() -> Int {
+        if score > highScore {
+            highScore = score
+        }
+        return highScore
     }
 }

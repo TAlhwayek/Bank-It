@@ -45,7 +45,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="startPage" id="BYZ-38-t0r" customClass="ViewController" customModule="Bank_It" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="startViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Bank_It" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,8 +68,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="High Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALY-YZ-GOR">
-                                <rect key="frame" x="144" y="307" width="104" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="High Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALY-YZ-GOR">
+                                <rect key="frame" x="98" y="307" width="196" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -87,6 +87,7 @@
                     <navigationItem key="navigationItem" id="E87-py-wTR"/>
                     <connections>
                         <outlet property="helpButton" destination="vuZ-Hx-oIU" id="jFF-X2-1CE"/>
+                        <outlet property="highScoreLabel" destination="ALY-YZ-GOR" id="Y4z-Id-g6S"/>
                         <segue destination="hgg-bc-l1y" kind="show" identifier="helpMenuSegue" id="dIU-9g-3BM"/>
                     </connections>
                 </viewController>

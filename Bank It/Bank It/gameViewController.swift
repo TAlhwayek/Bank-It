@@ -7,9 +7,18 @@
 
 import UIKit
 
+// Protocol used for high score
+protocol HighScoreDelegate: AnyObject {
+    func updateHighScore(score: Int)
+}
+
 class gameViewController: UIViewController {
     // Bank object
     var newGame: BankClass?
+    
+    // High score delegate
+    weak var delegate: HighScoreDelegate?
+    var highScore: Int = 0
     
     // Labels
     @IBOutlet weak var scoreLabel: UILabel!
@@ -30,6 +39,15 @@ class gameViewController: UIViewController {
         numberLabel.text = String(newGame?.getNewNumber() ?? 0)
         scoreLabel.text = "Score: " + String(newGame?.getScore() ?? 0)
         livesLabel.text = "Lives: " + String(newGame?.getLives() ?? 3)
+        
+        // Update high score
+        let updatedHighScore = newGame?.updateHighScore() ?? 0
+        delegate?.updateHighScore(score: updatedHighScore)
+        
+        // Save high score
+        UserDefaults.standard.set(updatedHighScore, forKey: "HighScore")
+        UserDefaults.standard.synchronize()
+        
         // If user ran out of lives, display an alert
         if(newGame?.getLives() == 0) {
             showAlertButton()
@@ -69,4 +87,6 @@ class gameViewController: UIViewController {
         // Present the alert
         present(alertController, animated: true, completion: nil)
     }
+    
+
 }
