@@ -15,6 +15,7 @@
 		9BE41AED2A15C83C005E8A6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BE41AEB2A15C83C005E8A6A /* LaunchScreen.storyboard */; };
 		9BF8CC752A26BA0500E01C33 /* bankClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF8CC742A26BA0500E01C33 /* bankClass.swift */; };
 		9BF8CC772A26BC4E00E01C33 /* gameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF8CC762A26BC4E00E01C33 /* gameViewController.swift */; };
+		9BF8CC792A27F25200E01C33 /* helpMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF8CC782A27F25200E01C33 /* helpMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		9BE41AFD2A15C83D005E8A6A /* Bank ItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bank ItUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BF8CC742A26BA0500E01C33 /* bankClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bankClass.swift; sourceTree = "<group>"; };
 		9BF8CC762A26BC4E00E01C33 /* gameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameViewController.swift; sourceTree = "<group>"; };
+		9BF8CC782A27F25200E01C33 /* helpMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helpMenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				9BE41AEE2A15C83C005E8A6A /* Info.plist */,
 				9BF8CC742A26BA0500E01C33 /* bankClass.swift */,
 				9BF8CC762A26BC4E00E01C33 /* gameViewController.swift */,
+				9BF8CC782A27F25200E01C33 /* helpMenuViewController.swift */,
 			);
 			path = "Bank It";
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BF8CC792A27F25200E01C33 /* helpMenuViewController.swift in Sources */,
 				9BF8CC752A26BA0500E01C33 /* bankClass.swift in Sources */,
 				9BE41AE52A15C839005E8A6A /* ViewController.swift in Sources */,
 				9BE41AE12A15C839005E8A6A /* AppDelegate.swift in Sources */,

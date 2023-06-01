@@ -37,9 +37,10 @@ class ViewController: UIViewController {
    
     // Popover help section
     @objc func imageTapped() {
-        let helpMenuVC = storyboard?.instantiateViewController(withIdentifier: "helpMenuViewController")
-        helpMenuVC?.modalPresentationStyle = .popover
-        present(helpMenuVC!, animated: true, completion: nil)
+        if let helpMenuNavigationController = storyboard?.instantiateViewController(withIdentifier: "helpMenuNavigationController") {
+            helpMenuNavigationController.modalPresentationStyle = .popover
+            present(helpMenuNavigationController, animated: true, completion: nil)
+        }
     }
 }
 

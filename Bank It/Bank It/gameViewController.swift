@@ -10,8 +10,6 @@ import UIKit
 class gameViewController: UIViewController {
     // Bank object
     var newGame: BankClass?
-    // Create a new alert
-    
     
     // Labels
     @IBOutlet weak var scoreLabel: UILabel!
@@ -25,8 +23,6 @@ class gameViewController: UIViewController {
         updateUI()
         // Load view
         super.viewDidLoad()
-        
-        
     }
     
     // Updates score and number labels each time
@@ -34,7 +30,7 @@ class gameViewController: UIViewController {
         numberLabel.text = String(newGame?.getNewNumber() ?? 0)
         scoreLabel.text = "Score: " + String(newGame?.getScore() ?? 0)
         livesLabel.text = "Lives: " + String(newGame?.getLives() ?? 3)
-        // If user ran out of lives
+        // If user ran out of lives, display an alert
         if(newGame?.getLives() == 0) {
             showAlertButton()
         }
