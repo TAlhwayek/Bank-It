@@ -6,7 +6,7 @@ This is still in progress. Still in its early alpha version.
 Current Version: 0.1.0
 
 Latest update:
-- Added high score on start page that it saved even after closing the app.
+- Added high score on start page that is saved even after closing the app.
  
 Fixes needed:
  - General UI updates
