@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BBC71A22A2B6E2C0075993D /* statsMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC71A12A2B6E2C0075993D /* statsMenuViewController.swift */; };
 		9BE41AE12A15C839005E8A6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE41AE02A15C839005E8A6A /* AppDelegate.swift */; };
 		9BE41AE32A15C839005E8A6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE41AE22A15C839005E8A6A /* SceneDelegate.swift */; };
 		9BE41AE52A15C839005E8A6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE41AE42A15C839005E8A6A /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9BBC71A12A2B6E2C0075993D /* statsMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statsMenuViewController.swift; sourceTree = "<group>"; };
 		9BE41ADD2A15C839005E8A6A /* Bank It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bank It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE41AE02A15C839005E8A6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BE41AE22A15C839005E8A6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				9BF8CC742A26BA0500E01C33 /* bankClass.swift */,
 				9BF8CC762A26BC4E00E01C33 /* gameViewController.swift */,
 				9BF8CC782A27F25200E01C33 /* helpMenuViewController.swift */,
+				9BBC71A12A2B6E2C0075993D /* statsMenuViewController.swift */,
 			);
 			path = "Bank It";
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				9BF8CC752A26BA0500E01C33 /* bankClass.swift in Sources */,
 				9BE41AE52A15C839005E8A6A /* ViewController.swift in Sources */,
 				9BE41AE12A15C839005E8A6A /* AppDelegate.swift in Sources */,
+				9BBC71A22A2B6E2C0075993D /* statsMenuViewController.swift in Sources */,
 				9BF8CC772A26BC4E00E01C33 /* gameViewController.swift in Sources */,
 				9BE41AE32A15C839005E8A6A /* SceneDelegate.swift in Sources */,
 			);

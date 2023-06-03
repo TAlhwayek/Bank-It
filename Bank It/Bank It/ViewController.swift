@@ -14,13 +14,19 @@ extension ViewController: HighScoreDelegate {
     }
 }
 
-class ViewController: UIViewController {
+
+class ViewController: UIViewController, UIViewControllerTransitioningDelegate, UIPopoverPresentationControllerDelegate {
     
-    // Help button IBOutlet
+    // Help button (image view) IBOutlet
     @IBOutlet weak var helpButton: UIImageView!
+    
+    // Stats button (image view) IBOutlet
+    @IBOutlet weak var statsButton: UIImageView!
     
     // High score label on start page
     @IBOutlet weak var highScoreLabel: UILabel!
+    
+    
     
     override func viewDidLoad() {
         // Retrieve saved high score
@@ -36,8 +42,14 @@ class ViewController: UIViewController {
         // Make image tappable
         helpButton.isUserInteractionEnabled = true
         // Create a tap gesture recognizer
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
-        helpButton.addGestureRecognizer(tapGesture)
+        let helpTapGesture = UITapGestureRecognizer(target: self, action: #selector(helpTapped))
+        helpButton.addGestureRecognizer(helpTapGesture)
+        
+        // Stats section
+        // Also make image tappable
+        statsButton.isUserInteractionEnabled = true
+        let statsTapGesture = UITapGestureRecognizer(target: self, action: #selector(statsTapped))
+        statsButton.addGestureRecognizer(statsTapGesture)
         
         // Change back button to "Exit"
         navigationItem.backBarButtonItem = UIBarButtonItem(
@@ -48,17 +60,44 @@ class ViewController: UIViewController {
     @IBAction func startButton(_ sender: Any) {
         // Open main game
         let gameVC = storyboard?.instantiateViewController(withIdentifier: "gameViewController") as! gameViewController
-        gameVC.delegate = self
+        gameVC.HSDelegate = self
         // Navigate to game
         navigationController?.pushViewController(gameVC, animated: true)
     }
    
     // Popover help section
-    @objc func imageTapped() {
+    @objc func helpTapped() {
         if let helpMenuNavigationController = storyboard?.instantiateViewController(withIdentifier: "helpMenuNavigationController") {
             helpMenuNavigationController.modalPresentationStyle = .popover
+            
             present(helpMenuNavigationController, animated: true, completion: nil)
         }
     }
+    
+    // Pop up stats section
+    @objc func statsTapped() {
+        if let statsMenuViewController = storyboard?.instantiateViewController(withIdentifier: "statsMenuViewController") {
+            statsMenuViewController.modalPresentationStyle = .popover
+            statsMenuViewController.preferredContentSize = CGSize(width: 200, height: 150) 
+
+            if let popoverPresentationController = statsMenuViewController.popoverPresentationController {
+                popoverPresentationController.delegate = self
+                popoverPresentationController.sourceView = self.view
+                popoverPresentationController.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
+                popoverPresentationController.permittedArrowDirections = []
+                
+                present(statsMenuViewController, animated: true, completion: nil)
+            }
+        }
+    }
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController, traitCollection: UITraitCollection) -> UIModalPresentationStyle {
+        return .none // Ensure the popover style is preserved even on compact width environments
+    }
+    
+    func popoverPresentationControllerDidDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) {
+        // Handle popover dismissal here if needed
+    }
+
 }
 

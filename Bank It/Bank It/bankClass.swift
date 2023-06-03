@@ -14,6 +14,16 @@ class BankClass {
     var score: Int = 0
     var lives: Int = 3
     
+    // Used to store gamesPlayed statistic
+    var gamesPlayed: Int {
+        get {
+            return UserDefaults.standard.integer(forKey: "GamesPlayedKey")
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "GamesPlayedKey")
+        }
+    }
+    
     // Get high score
     var highScore: Int {
         get {
@@ -72,5 +82,16 @@ class BankClass {
             highScore = score
         }
         return highScore
+    }
+    
+    // Update games played
+    func updateGamesPlayed() -> Int {
+        gamesPlayed += 1
+        return gamesPlayed
+    }
+    
+    // Returns games played
+    func getGamesPlayed() -> Int {
+        return gamesPlayed
     }
 }
