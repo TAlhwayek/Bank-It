@@ -3,10 +3,10 @@ A simple guessing game where the user guess if the next number is higher or lowe
  
 This is still in progress. Still in its early alpha version.
 
-Current Version: 0.1.0
+Current Version: 0.2.0
 
 Latest update:
-- Added high score on start page that is saved even after closing the app.
+- Added stats menu on start screen that shows games played
  
 Fixes needed:
  - General UI updates
