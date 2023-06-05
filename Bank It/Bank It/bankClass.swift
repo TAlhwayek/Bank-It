@@ -38,6 +38,7 @@ class BankClass {
     func getNewNumber() -> Int {
         // Update displayed number
         displayedNumber = nextNumber
+        // Generate new number
         nextNumber = Int(arc4random_uniform(1000))
         
         // Disallow duplicates (just in case)
@@ -64,10 +65,13 @@ class BankClass {
     func checkNumbers(userPressedHigher: Bool) -> Bool {
         var userGotItCorrect: Bool = false
         // Checking for correct answer
+        // If user pressed higher and the answer is correct
         if (nextNumber > displayedNumber && userPressedHigher) {
             userGotItCorrect = true
+        // If user pressed lower and the answer is correct
         } else if (displayedNumber > nextNumber && !userPressedHigher) {
             userGotItCorrect = true
+        // The answer is incorrect
         } else {
             userGotItCorrect = false
             lives -= 1
@@ -76,7 +80,7 @@ class BankClass {
         return userGotItCorrect
     }
     
-    // Update high score
+    // Update high score if new score is larger than the old high score
     func updateHighScore() -> Int {
         if score > highScore {
             highScore = score
