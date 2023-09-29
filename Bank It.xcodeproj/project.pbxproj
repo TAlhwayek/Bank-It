@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B42E6902AC65A2600BA89DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B42E68F2AC65A2600BA89DD /* Assets.xcassets */; };
 		9BBC71A22A2B6E2C0075993D /* statsMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC71A12A2B6E2C0075993D /* statsMenuViewController.swift */; };
 		9BE41AE12A15C839005E8A6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE41AE02A15C839005E8A6A /* AppDelegate.swift */; };
 		9BE41AE32A15C839005E8A6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE41AE22A15C839005E8A6A /* SceneDelegate.swift */; };
-		9BE41AE52A15C839005E8A6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE41AE42A15C839005E8A6A /* ViewController.swift */; };
+		9BE41AE52A15C839005E8A6A /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE41AE42A15C839005E8A6A /* StartViewController.swift */; };
 		9BE41AE82A15C839005E8A6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BE41AE62A15C839005E8A6A /* Main.storyboard */; };
 		9BE41AED2A15C83C005E8A6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BE41AEB2A15C83C005E8A6A /* LaunchScreen.storyboard */; };
 		9BF8CC752A26BA0500E01C33 /* bankClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF8CC742A26BA0500E01C33 /* bankClass.swift */; };
 		9BF8CC772A26BC4E00E01C33 /* gameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF8CC762A26BC4E00E01C33 /* gameViewController.swift */; };
 		9BF8CC792A27F25200E01C33 /* helpMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF8CC782A27F25200E01C33 /* helpMenuViewController.swift */; };
-		9BF8CC7B2A282F2600E01C33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BF8CC7A2A282F2600E01C33 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B42E68F2AC65A2600BA89DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BBC71A12A2B6E2C0075993D /* statsMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statsMenuViewController.swift; sourceTree = "<group>"; };
 		9BE41ADD2A15C839005E8A6A /* Bank It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bank It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE41AE02A15C839005E8A6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BE41AE22A15C839005E8A6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9BE41AE42A15C839005E8A6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9BE41AE42A15C839005E8A6A /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		9BE41AE72A15C839005E8A6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BE41AEC2A15C83C005E8A6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BE41AEE2A15C83C005E8A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 		9BF8CC742A26BA0500E01C33 /* bankClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bankClass.swift; sourceTree = "<group>"; };
 		9BF8CC762A26BC4E00E01C33 /* gameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameViewController.swift; sourceTree = "<group>"; };
 		9BF8CC782A27F25200E01C33 /* helpMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helpMenuViewController.swift; sourceTree = "<group>"; };
-		9BF8CC7A2A282F2600E01C33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../../../../Downloads/AppIcons/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +99,10 @@
 		9BE41ADF2A15C839005E8A6A /* Bank It */ = {
 			isa = PBXGroup;
 			children = (
-				9BF8CC7A2A282F2600E01C33 /* Assets.xcassets */,
+				9B42E68F2AC65A2600BA89DD /* Assets.xcassets */,
 				9BE41AE02A15C839005E8A6A /* AppDelegate.swift */,
 				9BE41AE22A15C839005E8A6A /* SceneDelegate.swift */,
-				9BE41AE42A15C839005E8A6A /* ViewController.swift */,
+				9BE41AE42A15C839005E8A6A /* StartViewController.swift */,
 				9BE41AE62A15C839005E8A6A /* Main.storyboard */,
 				9BE41AEB2A15C83C005E8A6A /* LaunchScreen.storyboard */,
 				9BE41AEE2A15C83C005E8A6A /* Info.plist */,
@@ -178,7 +178,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					9BE41ADC2A15C839005E8A6A = {
 						CreatedOnToolsVersion = 14.3;
@@ -219,7 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BE41AED2A15C83C005E8A6A /* LaunchScreen.storyboard in Resources */,
-				9BF8CC7B2A282F2600E01C33 /* Assets.xcassets in Resources */,
+				9B42E6902AC65A2600BA89DD /* Assets.xcassets in Resources */,
 				9BE41AE82A15C839005E8A6A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,7 +247,7 @@
 			files = (
 				9BF8CC792A27F25200E01C33 /* helpMenuViewController.swift in Sources */,
 				9BF8CC752A26BA0500E01C33 /* bankClass.swift in Sources */,
-				9BE41AE52A15C839005E8A6A /* ViewController.swift in Sources */,
+				9BE41AE52A15C839005E8A6A /* StartViewController.swift in Sources */,
 				9BE41AE12A15C839005E8A6A /* AppDelegate.swift in Sources */,
 				9BBC71A22A2B6E2C0075993D /* statsMenuViewController.swift in Sources */,
 				9BF8CC772A26BC4E00E01C33 /* gameViewController.swift in Sources */,
@@ -340,6 +340,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -400,6 +401,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension ViewController: HighScoreDelegate {
+extension StartViewController: HighScoreDelegate {
     func updateHighScore(score: Int) {
         // Update the high score label with the new score
         highScoreLabel.text = "High score: \(score)"
@@ -15,7 +15,7 @@ extension ViewController: HighScoreDelegate {
 }
 
 
-class ViewController: UIViewController, UIViewControllerTransitioningDelegate, UIPopoverPresentationControllerDelegate {
+class StartViewController: UIViewController, UIViewControllerTransitioningDelegate, UIPopoverPresentationControllerDelegate {
     
     // Help button (image view) IBOutlet
     @IBOutlet weak var helpButton: UIImageView!
