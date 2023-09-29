@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BBC71A22A2B6E2C0075993D /* statsMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC71A12A2B6E2C0075993D /* statsMenuViewController.swift */; };
 		9BE41AE12A15C839005E8A6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE41AE02A15C839005E8A6A /* AppDelegate.swift */; };
 		9BE41AE32A15C839005E8A6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE41AE22A15C839005E8A6A /* SceneDelegate.swift */; };
 		9BE41AE52A15C839005E8A6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE41AE42A15C839005E8A6A /* ViewController.swift */; };
 		9BE41AE82A15C839005E8A6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BE41AE62A15C839005E8A6A /* Main.storyboard */; };
-		9BE41AEA2A15C83C005E8A6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BE41AE92A15C83C005E8A6A /* Assets.xcassets */; };
 		9BE41AED2A15C83C005E8A6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BE41AEB2A15C83C005E8A6A /* LaunchScreen.storyboard */; };
 		9BF8CC752A26BA0500E01C33 /* bankClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF8CC742A26BA0500E01C33 /* bankClass.swift */; };
 		9BF8CC772A26BC4E00E01C33 /* gameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF8CC762A26BC4E00E01C33 /* gameViewController.swift */; };
+		9BF8CC792A27F25200E01C33 /* helpMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF8CC782A27F25200E01C33 /* helpMenuViewController.swift */; };
+		9BF8CC7B2A282F2600E01C33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BF8CC7A2A282F2600E01C33 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,18 +37,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9BBC71A12A2B6E2C0075993D /* statsMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statsMenuViewController.swift; sourceTree = "<group>"; };
 		9BE41ADD2A15C839005E8A6A /* Bank It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bank It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE41AE02A15C839005E8A6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BE41AE22A15C839005E8A6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9BE41AE42A15C839005E8A6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9BE41AE72A15C839005E8A6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9BE41AE92A15C83C005E8A6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BE41AEC2A15C83C005E8A6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BE41AEE2A15C83C005E8A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BE41AF32A15C83D005E8A6A /* Bank ItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bank ItTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE41AFD2A15C83D005E8A6A /* Bank ItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bank ItUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BF8CC742A26BA0500E01C33 /* bankClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bankClass.swift; sourceTree = "<group>"; };
 		9BF8CC762A26BC4E00E01C33 /* gameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameViewController.swift; sourceTree = "<group>"; };
+		9BF8CC782A27F25200E01C33 /* helpMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helpMenuViewController.swift; sourceTree = "<group>"; };
+		9BF8CC7A2A282F2600E01C33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../../../../Downloads/AppIcons/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,15 +99,17 @@
 		9BE41ADF2A15C839005E8A6A /* Bank It */ = {
 			isa = PBXGroup;
 			children = (
+				9BF8CC7A2A282F2600E01C33 /* Assets.xcassets */,
 				9BE41AE02A15C839005E8A6A /* AppDelegate.swift */,
 				9BE41AE22A15C839005E8A6A /* SceneDelegate.swift */,
 				9BE41AE42A15C839005E8A6A /* ViewController.swift */,
 				9BE41AE62A15C839005E8A6A /* Main.storyboard */,
-				9BE41AE92A15C83C005E8A6A /* Assets.xcassets */,
 				9BE41AEB2A15C83C005E8A6A /* LaunchScreen.storyboard */,
 				9BE41AEE2A15C83C005E8A6A /* Info.plist */,
 				9BF8CC742A26BA0500E01C33 /* bankClass.swift */,
 				9BF8CC762A26BC4E00E01C33 /* gameViewController.swift */,
+				9BF8CC782A27F25200E01C33 /* helpMenuViewController.swift */,
+				9BBC71A12A2B6E2C0075993D /* statsMenuViewController.swift */,
 			);
 			path = "Bank It";
 			sourceTree = "<group>";
@@ -213,7 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BE41AED2A15C83C005E8A6A /* LaunchScreen.storyboard in Resources */,
-				9BE41AEA2A15C83C005E8A6A /* Assets.xcassets in Resources */,
+				9BF8CC7B2A282F2600E01C33 /* Assets.xcassets in Resources */,
 				9BE41AE82A15C839005E8A6A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,9 +245,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BF8CC792A27F25200E01C33 /* helpMenuViewController.swift in Sources */,
 				9BF8CC752A26BA0500E01C33 /* bankClass.swift in Sources */,
 				9BE41AE52A15C839005E8A6A /* ViewController.swift in Sources */,
 				9BE41AE12A15C839005E8A6A /* AppDelegate.swift in Sources */,
+				9BBC71A22A2B6E2C0075993D /* statsMenuViewController.swift in Sources */,
 				9BF8CC772A26BC4E00E01C33 /* gameViewController.swift in Sources */,
 				9BE41AE32A15C839005E8A6A /* SceneDelegate.swift in Sources */,
 			);
@@ -425,19 +433,22 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tonyalhwayek.Bank-It";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -456,19 +467,22 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tonyalhwayek.Bank-It";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
